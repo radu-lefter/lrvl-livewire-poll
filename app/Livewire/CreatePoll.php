@@ -53,10 +53,6 @@ class CreatePoll extends Component
                 ->all()
         );
 
-        //foreach ($this->options as $optionName) {
-        //    $poll->options()->create(['name' => $optionName]);
-        //}
-
         $this->reset(['title', 'options']);
         $this->dispatch('pollCreated');
     }
